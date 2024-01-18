@@ -11,29 +11,29 @@ class Program
         string userInput = Console.ReadLine();
 
         //create variable and convert user input string to an integer
-        int grade_percentage = int.Parse(userInput);
+        int gradePercentage = int.Parse(userInput);
 
         //create variable to hold letter grade
         string letter = "";
 
         //determine which letter grade and print statement according to which grade.
-        if (grade_percentage >= 90)
+        if (gradePercentage >= 90)
         {
             //Console.WriteLine("You have an A.");
             letter = "A";
 
         }
-        else if (grade_percentage >= 80)
+        else if (gradePercentage >= 80)
         {
             //Console.WriteLine("You have a B.");
              letter = "B";
         }
-        else if (grade_percentage >= 70)
+        else if (gradePercentage >= 70)
         {
             //Console.WriteLine("You have a C.");
              letter = "C";
         }
-        else if (grade_percentage >= 60)
+        else if (gradePercentage >= 60)
         {
             //Console.WriteLine("You have a D.");
              letter = "D";
@@ -48,7 +48,7 @@ class Program
         Console.WriteLine($"You have a/an {letter}.");
         
         //determine if they passed the class and print corresponding statement
-        if (grade_percentage >= 70)
+        if (gradePercentage >= 70)
         {
             Console.WriteLine("Congratulations! You passed the class!");
         }
